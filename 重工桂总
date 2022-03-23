@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int a;
+	scanf_s("%d", &a);
+	int j[a], b[a];
+	char id[a][17];
+	for (int i = 0; i < a; i++)
+	{
+		scanf_s("%d %d %d", id[i], &j[i],&b[i]);
+		int m;
+		scanf_s("%d", &m);
+		int s[m];
+		for (int i = 0; i < m; i++)
+			scanf_s("%d", &s[i]);
+		for (int i = 0; i < m; i++)
+		{
+			int index;
+			for (int k = 0; k < a; k++)
+			{
+				if (s[i] == j[k])
+				{
+					index = k;
+					break;
+				}
+			}
+			printf("%s %d\n", id[index], b[index]);
+		}
+	}
+	return 0;
+}
