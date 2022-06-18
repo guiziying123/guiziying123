@@ -10,7 +10,7 @@ struct chuhu{
    char password[7];//密码 
    double cunkuan;//存款 
 }hu[N]; 
-voiddate();//显示当前日期
+void date();//显示当前日期
 int a,a1;//主界面选择变量 
 void Flag1();//主界面
 void Flag2();//用户界面 
